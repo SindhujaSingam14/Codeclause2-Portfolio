@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Profile</title>    
+    <link rel ="stylesheet" href="style.css"
+    <script src="https://kit."></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+</head>
+
+
+
+<body>
+<div id="header">
+
+
+    <div class="container">
+    <nav>
+        <img src="images/sindhuname.png" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>  
+            
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Student in Amrita School of Engineering</p>
+        <h1>I'm <span>Singam Sindhuja Reddy</span><br> from Andhra Pradesh</h1>
+    </div>
+</div>
+</div>
+<!----------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+             <div class ="about-col-1">
+             <img src="images/aboutme.png">
+             </div>
+             <div class ="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am Singam Sindhuja Reddy student currently persuing Computer Science and Engineering in Amrita Vishwa VidhyaPeetham.
+I am multitasking professional with exceptional coding techniques having bachelor of engineering degree in computer science technology. Comprehensive knowledge of primary development languages for instance C, C++, JAVA and special talent of writing highly competent programs.Deep understanding regarding software development environments and considerable talent in achieving critical solutions. Able to understand and implement modern operating systems and great experience of their troubleshooting. Excellent in presenting and make people understand. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                <div class="tab-contents active-tab"id="skills">
+                    <ul>
+                        <li><span>Front End</span><br>Designing web/app interfaces, HTML, CSS</li>
+                        <li><span>Back End</span><br>SQL, MongoDB, Cassandra</li>
+                        <li><span>Languages</span><br>Python, Java, C++</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id ="experience">
+                    <ul>
+                        <li><span>Smartknower</span><br>AWS Azure Cloud Foundations</li>
+                        <li><span>AWS</span><br>Machine learning and cloud computing</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>B Tech </span><br>Amrita Vishwa Vidhyapeetham - Computer Science and Engineering</li>
+                        <li><span>Intermediate</span><br>Sri Chaitanya Junior College</li>
+                        
+                    </ul>
+                </div>
+             </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="portfolio">
+   <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/cnn.png">
+            <div class="layer">
+                <h3>Facial Features reconition Using CNN</h3>
+                <p>It is an machine learning project which is worked on Facial parts position detection where the idea is taken from the draw back of Convolutional Neural Networks.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/nn.png">
+            
+            <div class="layer">
+                <h3>Music Recomendation System Using LSTM</h3>
+                <p>It is a Neural Networks based project done with Long Short Term Memory where we input the notes to the compiler and it genetares the music/tune for the given notes.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/stack.png">
+            <div class="layer">
+                <h3>Text Editor Using Stack</h3>
+                <p>Created a text editor using Stack Data Structure in Java. The concept is to use two stacks to keep the pointer in place. The items to the left of the cursor would be in the left stack, while the contents to the right of the cursor would be in the right stack. Simply push or pop the elements to get to where you need to go, then insert or delete text.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    <a href="#"class="btn">See more</a>
+   </div>
+
+
+</div>
+<div id ="contact">
+    <div class ="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-brands fa-facebook"></i>contact@mail.com</p>
+                <p><i class="fa-brands fa-facebook"></i>912434863</p>
+                <div class="social-icons">
+                    <p><a href="https://facebook.com/"><p><i class="fa-brands fa-facebook"></i>     FaceBook</a><br><br>
+                    <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-facebook"></i>     Twitter</a><br><br>
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-facebook"></i>     Instagram</a><br><br>
+                    <a href="https://www.google.com/search?q=linkedin+login&rlz=1C1RXQR_enIN1053IN1053&oq=linked+in+lo&aqs=chrome.1.69i57j0i10i512l8j0i512.5064j0j4&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-facebook"></i>     LinkedIn</a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"placeholder="Your Name" required>
+                    <input type="email" name="Email"placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxioWgsvly_yrehR8m_JTTgMudMc5mDYDf9RLFyjxkq3wSve8_Vgir1E6RIp-AOEB3s/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
